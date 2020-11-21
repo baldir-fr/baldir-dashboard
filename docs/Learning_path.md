@@ -12,7 +12,7 @@ What I learned while developing this application.
 - Toying with kotlin code in [Intellij Scratch file](https://www.jetbrains.com/help/idea/scratches.html)
 - Install Android SDK
 - Run on real Android Device (Android 9.0)
-  - Error
+  - Error on android when I pass function from android Main into common 
 - Setting up markdown documentation
     - [Learning path](Learning_path.md)
     - [Todo - Roadmap](Todo.md)
@@ -24,7 +24,6 @@ What I learned while developing this application.
 - [How to pass a function as a parameter in Kotlin](Learning_path/kotlin-pass-function-as-parameter.md)
 - [Run kotlin code interactively in scratch file](Learning_path/kotlin-scratch-file-run-interactive.md)
 
-## Episode 02 - Architecture
-
+Git tag 01-init
 
 
