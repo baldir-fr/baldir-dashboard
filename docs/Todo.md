@@ -61,7 +61,23 @@
 - [x] Decouple desktop behaviour from common app
     - [using function as parameter](Learning_path/kotlin-pass-function-as-parameter.md) 
 - Cleanup all warnings (analyse project)
+- [Monorepo ?](https://monorepo.guide/)
+  - [Trunk based?](https://trunkbaseddevelopment.com/)
+- Semver?
+  - [changeset bot?](https://github.com/atlassian/changesets)
+- .editorconfig
+- meta comment "Contracts are forever"
+  - when a change is detected in a public API a warning is issued by CI / githook or whatever
+
 **Android**
 
 - [ ] Setting up SDK
   - [ ] Running on device
+  
+**Automation**
+
+- [ ] Setting up SonarCloud
+  - [ ] Bind github baldir-fr org to sonarcloud organization
+  - [ ] Add
+- git pre-commit hook (run the build)
+  - [prevent secrets to leak](https://www.tygertec.com/git-hooks-practical-uses-windows/)
