@@ -20,6 +20,7 @@
   - Generate release notes from git commit messages
   - .githook (unix/windows)
   - [conventional commit with java](https://dwmkerr.com/conventional-commits-and-semantic-versioning-for-java/)
+- [ ] Choose a licence
 **Scaffolding**
 
 - [x] Setup multiplatform project (gradle)
