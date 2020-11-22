@@ -1,6 +1,18 @@
+## Statuses
+
 - Proposed
 - Rejected
 - Accepted
 - Deprecated
-- … 
-- Superseded by [ADR-0005](0005-example.md)
+- Clarified
+- Superseded
+
+## Links
+
+- Amended by 
+- Superseded by
+- Clarified by
+
+- Amends
+- Seuperseds
+- Clarifies
