@@ -7,13 +7,13 @@
   - Document what I learn while Programming. This way I can
   - Git tags after each iteration
 - [ ] Todo / Roadmap
-  - [ ] Simple markdown file to keep track of What's next (this file)
+  - [X] Simple markdown file to keep track of What's next (this file)
   - [ ] Migrate to Github / Gitlab issues later if necessary
 - [ ] Features
 - [ ] Migrate to Asciidoc
 - [ ] Generated Behavior documentation from Gherkin
-- [ ] Architecture decision records [ADR](https://adr.github.io/)
-  - Lightweight ADRs : title, status, context, decision, consequences
+- [X] Architecture decision records [ADR](https://adr.github.io/)
+  - [X] Lightweight ADRs : title, status, context, decision, consequences
     - [Markdown Architectural Decision Records](https://adr.github.io/madr/)
       - [Youtube - Markdown Architectural Decision Records: Capturing Decisions Where the Developer is Working](https://www.youtube.com/watch?v=t04uboZ9Lks)
 - [ ] [Conventional commit 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/)
@@ -22,6 +22,8 @@
   - [conventional commit with java](https://dwmkerr.com/conventional-commits-and-semantic-versioning-for-java/)
 - [ ] Choose a licence
 - [ ] [Docs as code](https://www.writethedocs.org/guide/docs-as-code/)
+
+
 **Scaffolding**
 
 - [x] Setup multiplatform project (gradle)
@@ -59,30 +61,38 @@
 
 **Architecture**
 
+- [ ] ADR : Git
+- [ ] ADR : Github
+- [ ] ADR : choose a VCS project structure
+    - [Monorepo ?](https://monorepo.guide/)
+- [ ] choose a VCS workflow 
+    - [Trunk based?](https://trunkbaseddevelopment.com/)
 - [x] Decouple desktop behaviour from common app
-    - [using function as parameter](Learning_path/kotlin-pass-function-as-parameter.md) 
+    - [using function as parameter](Learning_path/kotlin-pass-function-as-parameter.md)
+    - It works in theory, but fails at compile due to what appeard to be SDK limitations 
 - Cleanup all warnings (analyse project)
-- [Monorepo ?](https://monorepo.guide/)
-  - [Trunk based?](https://trunkbaseddevelopment.com/)
-- Semver?
-  - [changeset bot?](https://github.com/atlassian/changesets)
-- [ ] .editorconfig ADR
+  - android lint ./gradlew lint
+- [ ] ADR versionning model
+    - Semver?
+    - [changeset bot?](https://github.com/atlassian/changesets)
+- [X] .editorconfig ADR
 - [ ] encourage optional git hooks ADR
 - [ ] kotlin linter ADR
 - [ ] android linter ADR
 - meta comment "Contracts are forever"
   - when a change is detected in a public API a warning is issued by CI / githook or whatever
-- 
+- [ ] Scaffold a structured architecture documentation arborescence
+
 **Android**
 
-- [ ] Setting up SDK
-  - [ ] Running on device
+- [X] Setting up SDK
+  - [X] Running on device
 - [ ] Add a real icon
   
 **Automation**
 
 - [ ] Setting up SonarCloud
   - [ ] Bind github baldir-fr org to sonarcloud organization
-  - [ ] Add
-- git pre-commit hook (run the build)
+  - [ ] Add sonarcloud scan to build
+- [X] git pre-push hook (run the build)
   - [prevent secrets to leak](https://www.tygertec.com/git-hooks-practical-uses-windows/)
