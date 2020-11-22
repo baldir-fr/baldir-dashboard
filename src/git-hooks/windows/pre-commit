@@ -1,0 +1,8 @@
+#!/usr/bin/env pwsh
+
+.gradlew build
+
+if($LASTEXITCODE -ne 0) {
+    Write-Output "Build must success to commit changes"
+    EXIT 1
+}}
