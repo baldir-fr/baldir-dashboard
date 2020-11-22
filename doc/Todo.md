@@ -66,14 +66,18 @@
   - [Trunk based?](https://trunkbaseddevelopment.com/)
 - Semver?
   - [changeset bot?](https://github.com/atlassian/changesets)
-- .editorconfig
+- [ ] .editorconfig ADR
+- [ ] encourage optional git hooks ADR
+- [ ] kotlin linter ADR
+- [ ] android linter ADR
 - meta comment "Contracts are forever"
   - when a change is detected in a public API a warning is issued by CI / githook or whatever
-
+- 
 **Android**
 
 - [ ] Setting up SDK
   - [ ] Running on device
+- [ ] Add a real icon
   
 **Automation**
 

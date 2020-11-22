@@ -22,7 +22,7 @@ fun App( /* exitApp: () -> Unit*/) {
 
             Column(modifier = Modifier.fillMaxHeight()) {
                 Row {
-                    Button(onClick = {/*exitApp()*/}) {
+                    Button(onClick = { /*exitApp()*/ }) {
                         Text("Exit")
                     }
                     Checkbox(checked = false, onCheckedChange = {})
@@ -33,7 +33,5 @@ fun App( /* exitApp: () -> Unit*/) {
 
             Column(modifier = Modifier.fillMaxHeight()) { Text("In a column 3") }
         }
-
-
     }
 }

@@ -1,8 +1,13 @@
 #!/usr/bin/env pwsh
 
-.gradlew build
-
+Invoke-Command -ScriptBlock {adr-log -i doc/ArchitectureDecisions.md -d doc/architecture/decisions} | Out-Null
 if($LASTEXITCODE -ne 0) {
-    Write-Output "Build must success to commit changes"
+    Write-Output "Could not generate ADR index"
     EXIT 1
-}}
+}
+
+Invoke-Command -ScriptBlock {git add doc/ArchitectureDecisions.md} | Out-Null
+if($LASTEXITCODE -ne 0) {
+    Write-Output "Could not add ADR index to git versionned files"
+    EXIT 2
+}

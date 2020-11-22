@@ -39,3 +39,8 @@ Git tag : [01-init](https://github.com/baldir-fr/baldir-dashboard/releases/tag/0
   - [ADR automation](Learning_path/adr-automation.md)
   
 Git tag : [02-adr](https://github.com/baldir-fr/baldir-dashboard/releases/tag/02-adr)
+
+## 03 - 
+
+- .editorconfig : standard code style rules (+ Intellij specific rules)
+- 

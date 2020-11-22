@@ -15,7 +15,8 @@ fun main() = Window(
             "File",
             MenuItem(
                 "Exit",
-                onClick = { exitApp() })
+                onClick = { exitApp() }
+            )
         )
     ),
     centered = false,
