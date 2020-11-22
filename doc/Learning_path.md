@@ -24,7 +24,7 @@ What I learned while developing this application.
 - [How to pass a function as a parameter in Kotlin](Learning_path/kotlin-pass-function-as-parameter.md)
 - [Run kotlin code interactively in scratch file](Learning_path/kotlin-scratch-file-run-interactive.md)
 
-Git tag 01-init
+Git tag : [01-init](https://github.com/baldir-fr/baldir-dashboard/releases/tag/01-init)
 
 ## Offline 02 - ADR : Architectural Decision Records
 
@@ -38,4 +38,4 @@ Git tag 01-init
       - `adr-log -i ArchitectureDecisions.md -d doc/architecture/decisions`
   - [ADR automation](Learning_path/adr-automation.md)
   
-Git tag 02-adr
+Git tag : [02-adr](https://github.com/baldir-fr/baldir-dashboard/releases/tag/02-adr)
