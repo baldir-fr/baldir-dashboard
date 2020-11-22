@@ -26,4 +26,16 @@ What I learned while developing this application.
 
 Git tag 01-init
 
+## Offline 02 - ADR : Architectural Decision Records
 
+- Setup ADR
+  - [adr-j](https://github.com/adoble/adr-j)
+  - init adr with MADR
+    `adr init -t src/adr-template/madr-template.md doc/architecture/decisions`
+    - add an adr
+      `adr new "Use Architecture Decision Records"`
+    - [adr-log](https://adr.github.io/adr-log/) `npm install -g adr-log`
+      - `adr-log -i ArchitectureDecisions.md -d doc/architecture/decisions`
+  - [ADR automation](Learning_path/adr-automation.md)
+  
+Git tag 02-adr
