@@ -3,7 +3,7 @@
     <application
             android:icon="@drawable/abc_vector_test"
             android:allowBackup="false"
-            android:supportsRtl="true"
+      dcxv      android:supportsRtl="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".MainActivity">
             <intent-filter>
