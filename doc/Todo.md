@@ -2,8 +2,8 @@
 
 **Documentation**
 
-- [ ] Basic readme.md
-- [ ] Learning path
+- [X] Basic readme.md
+- [X] [Learning path](Learning_path.md)
   - Document what I learn while Programming. This way I can
   - Git tags after each iteration
 - [ ] Todo / Roadmap

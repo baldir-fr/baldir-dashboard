@@ -40,7 +40,18 @@ Git tag : [01-init](https://github.com/baldir-fr/baldir-dashboard/releases/tag/0
   
 Git tag : [02-adr](https://github.com/baldir-fr/baldir-dashboard/releases/tag/02-adr)
 
-## 03 - 
+## 03 - linting and git-hooks
 
-- .editorconfig : standard code style rules (+ Intellij specific rules)
-- 
+- [ADR-0002 : use editorconfig](architecture/decisions/0002-enforce-basic-code-style-with-editorconfig.md)
+- [gradle editorconfig plugin](Learning_path/gradle-editorconfig.md) : standard code style rules (+ Intellij specific rules)
+- [kotlinter](Learning_path/gradle-kotlinter.md)
+- optional [git-hook samples](Learning_path/git-hooks.md)
+  - windows (pwsh)
+    - pre-commit
+      - re-generate ADR index
+    - pre-push hooks
+      - editorconfig lint
+      - kotlin lint
+      - build successfuly
+
+Git tag : [03-lint](https://github.com/baldir-fr/baldir-dashboard/releases/tag/03-lint)
