@@ -2,6 +2,8 @@
 
 **Documentation**
 
+- [ ] ADR - one sentence = one line markdown
+  - Explanation [why it could be a good idea](https://asciidoctor.org/docs/asciidoc-recommended-practices/#one-sentence-per-line)
 - [X] Basic readme.md
 - [X] [Learning path](Learning_path.md)
   - Document what I learn while Programming. This way I can

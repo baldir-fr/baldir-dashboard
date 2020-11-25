@@ -6,13 +6,12 @@ plugins {
 
 group = "fr.baldir.dashboard"
 version = "1.0"
+dependencies {
+    implementation(project(":commonUI"))
+}
 
 repositories {
     google()
-}
-
-dependencies {
-    implementation(project(":common"))
 }
 
 android {

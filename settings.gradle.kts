@@ -6,12 +6,13 @@ pluginManagement {
         mavenCentral()
         maven { url = uri("https://maven.pkg.jetbrains.space/public/p/compose/dev") }
     }
-    
+
 }
 rootProject.name = "baldir-dashboard"
 
 
-include(":android")
-include(":desktop")
-include(":common")
+include(":androidInfra")
+include(":desktopInfra")
+include(":commonUI")
+include(":domain")
 
