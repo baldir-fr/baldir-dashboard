@@ -58,6 +58,10 @@ Git tag : [03-lint](https://github.com/baldir-fr/baldir-dashboard/releases/tag/0
 
 ## 04 - ...
 
+- BDD Starter with Cucumber
+  - in a specific gradle module : domain-bdd (name subject to change)
+    
+
 - Asciidoc?
     - Lightweight markup languages
     - pros
