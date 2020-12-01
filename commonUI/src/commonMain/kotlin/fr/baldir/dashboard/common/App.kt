@@ -22,10 +22,12 @@ fun App() {
 
         Column(modifier = Modifier.padding(16.dp)) {
             Text("Title 1", style = typography.h1)
-            Button(onClick = {
-                println("Hello to console")
-                exit()
-            }) {
+            Button(
+                onClick = {
+                    println("Hello to console")
+                    exit()
+                }
+            ) {
                 Text("Hello to console")
             }
             Checkbox(checked = false, onCheckedChange = {})
@@ -34,10 +36,8 @@ fun App() {
             Text("Title 2", style = typography.h2)
             Text("Title 3", style = typography.h3)
         }
-
     }
 }
-
 
 expect fun exit()
 
