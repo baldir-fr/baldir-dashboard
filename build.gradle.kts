@@ -1,3 +1,4 @@
+
 buildscript {
     repositories {
         gradlePluginPortal()
@@ -16,6 +17,7 @@ buildscript {
 plugins{
     id("org.jmailen.kotlinter") version "3.2.0"
     id("org.ec4j.editorconfig") version "0.0.3"
+    id("se.thinkcode.cucumber-runner") version "0.0.8" apply false
 }
 
 editorconfig {

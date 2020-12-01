@@ -1,0 +1,12 @@
+plugins {
+    id 'se.thinkcode.cucumber-runner'
+}
+
+apply plugin: 'se.thinkcode.cucumber-runner'
+apply plugin: 'java-library'
+apply plugin: 'java'
+
+dependencies {
+    testImplementation 'io.cucumber:cucumber-java8:6.8.1'
+    testImplementation 'io.cucumber:cucumber-junit:6.8.1'
+}
