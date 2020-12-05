@@ -15,5 +15,5 @@ include(":androidInfra")
 include(":desktopInfra")
 include(":commonUI")
 include(":domain")
-include(":domain-bdd")
+
 
