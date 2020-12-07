@@ -7,7 +7,7 @@ https://github.com/baldir-fr/baldir-dashboard
 
 ## Common gradle tasks
 
-```puml
+```
 ./gradlew editorConfigCheck
 ./gradlew editorConfigFormat
 ```

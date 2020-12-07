@@ -3,11 +3,11 @@
 Verify if kotlin files are linted correctly.
 
 ```powershell
-./gradlw lintKotlin
+./gradlew lintKotlin
 ```
 
 Tries to format kotlin files.
 
 ```powershell
-./gradlw formatKotlin
+./gradlew formatKotlin
 ```
