@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -30,12 +30,12 @@ jobs:
         restore-keys: ${{ runner.os }}-gradle
     - name: Build with Gradle
       run: ./gradlew check lintKotlin editorConfigCheck desktopTest
-    - name: Chocolatey Action
+    - name: Install Pickles with Chocolatey
       uses: crazy-max/ghaction-chocolatey@v1.4.0
       with:
         args: install pickles
     - name: Generate pickles documentation
-      run: . src\scripts\powershell\generate-pickles-documentation.ps1
+      run: . src/scripts/powershell/generate-pickles-documentation.ps1
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.1
       with:
