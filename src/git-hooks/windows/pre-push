@@ -1,21 +1,9 @@
 #!/usr/bin/env pwsh
 
-Write-Output "Lint and Build before push..."
+Write-Output "Lint and Test before push..."
 
-Invoke-Command -ScriptBlock {./gradlew editorConfigCheck} | Out-Null
+Invoke-Command -ScriptBlock {./gradlew check lintKotlin editorConfigCheck allTests} | Out-Null
 if($LASTEXITCODE -ne 0) {
-    Write-Output "editorconfig check failed"
+    Write-Output "pre-push checks failed"
     EXIT 1
-}
-
-Invoke-Command -ScriptBlock {./gradlew lintKotlin} | Out-Null
-if($LASTEXITCODE -ne 0) {
-    Write-Output "Kotlin lint failed"
-    EXIT 2
-}
-
-Invoke-Command -ScriptBlock {./gradlew build} | Out-Null
-if($LASTEXITCODE -ne 0) {
-    Write-Output "Build must success to push changes"
-    EXIT 3
 }
