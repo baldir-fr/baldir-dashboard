@@ -10,4 +10,6 @@ https://github.com/baldir-fr/baldir-dashboard
 ```
 ./gradlew editorConfigCheck
 ./gradlew editorConfigFormat
+./gradlew editorConfigCheck
+./gradlew editorConfigFormat
 ```
