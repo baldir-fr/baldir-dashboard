@@ -39,6 +39,13 @@ editorconfig {
 group = "fr.baldir.dashboard"
 
 version = "1.0"
+
+project(":android-infra") {
+    sonarqube {
+        isSkipProject = true
+    }
+}
+
 allprojects {
     apply(plugin = "org.jmailen.kotlinter")
     apply(plugin = "org.ec4j.editorconfig")
