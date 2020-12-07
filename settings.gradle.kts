@@ -11,9 +11,8 @@ pluginManagement {
 rootProject.name = "baldir-dashboard"
 
 
-include(":androidInfra")
-include(":desktopInfra")
-include(":commonUI")
+include(":android-infra")
+include(":desktop-infra")
+include(":common")
 include(":domain")
-
 
