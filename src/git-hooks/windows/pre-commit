@@ -11,3 +11,15 @@ if($LASTEXITCODE -ne 0) {
     Write-Output "Could not add ADR index to git versionned files"
     EXIT 2
 }
+
+Invoke-Command -ScriptBlock {./gradlew formatKotlin} | Out-Null
+if($LASTEXITCODE -ne 0) {
+    Write-Output "Could not apply kotlin formatter"
+    EXIT 3
+}
+
+Invoke-Command -ScriptBlock {./gradlew editorConfigFormat} | Out-Null
+if($LASTEXITCODE -ne 0) {
+    Write-Output "Could not apply editorconfig formatter"
+    EXIT 4
+}
