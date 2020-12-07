@@ -1,6 +1,5 @@
 import fr.baldir.dashboard.domain.Hello
 import io.cucumber.java8.En
-import io.cucumber.java8.PendingException
 import io.cucumber.java8.Scenario
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNotSame
