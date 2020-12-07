@@ -56,11 +56,16 @@ Git tag : [02-adr](https://github.com/baldir-fr/baldir-dashboard/releases/tag/02
 
 Git tag : [03-lint](https://github.com/baldir-fr/baldir-dashboard/releases/tag/03-lint)
 
-## 04 - ...
+## 04 - Living documentation
 
 - BDD Starter with Cucumber
-  - in a specific gradle module : domain-bdd (name subject to change)
+  - in the desktop-infra gradle module because we need jvm to run cucumber
+- Refactored gradle modules
+- Tried Pickles for generating living documentation
+- TODO later Maybe try also https://www.npmjs.com/package/cucumber-html-reporter
     
+## 05 - ...
+
 
 - Asciidoc?
     - Lightweight markup languages
@@ -78,7 +83,7 @@ Git tag : [03-lint](https://github.com/baldir-fr/baldir-dashboard/releases/tag/0
         - Needs to setup tooling
         - Requires [much](https://asciidoc.org/README.html)
         - Challenging to install on Windows
-        - Asciidoc (python) 
+        - Asciidoc (python)
         - Asciidoctor (ruby)
         - [AsciidoctorJ](https://asciidoctor.org/docs/asciidoctorj/)
             - Maven & Gradle plugins
@@ -87,7 +92,7 @@ Git tag : [03-lint](https://github.com/baldir-fr/baldir-dashboard/releases/tag/0
     - no need to setup tooling generally
     - VCS friendly
     - Not much style and templating (specific to static generators such as Jekyll)
-- LateX ?    
+- LateX ?
     - VCS friendly
 - Headless cms?
 
@@ -95,21 +100,21 @@ Git tag : [03-lint](https://github.com/baldir-fr/baldir-dashboard/releases/tag/0
 - Hexagonal architecture and gradle modules
 
 include(":android")
-    dependencies {
-        implementation(project(":common"))
-    }
+dependencies {
+implementation(project(":common"))
+}
 include(":desktop")
-    dependencies {
-        implementation(project(":common"))
-        implementation(compose.desktop.currentOs)
-    }
+dependencies {
+implementation(project(":common"))
+implementation(compose.desktop.currentOs)
+}
 include(":common")
-    androidMain
-    androidTest
-    commonMain
-    commonTest
-    desktopMain
-    desktopTest
+androidMain
+androidTest
+commonMain
+commonTest
+desktopMain
+desktopTest
 
 TODO : WIP
 ```puml

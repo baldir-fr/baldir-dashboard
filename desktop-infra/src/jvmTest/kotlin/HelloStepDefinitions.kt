@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNotSame
 import org.junit.jupiter.api.Assertions.assertSame
 
-var lastInstance: HelloStepDefinitions? = null
+var lastHelloInstance: HelloStepDefinitions? = null
 
 class HelloStepDefinitions : En {
     var lastGreeting: String? = null
@@ -13,23 +13,23 @@ class HelloStepDefinitions : En {
     init {
 
         Before { scenario: Scenario ->
-            assertNotSame(this, lastInstance)
-            lastInstance = this
+            assertNotSame(this, lastHelloInstance)
+            lastHelloInstance = this
         }
 
         BeforeStep { scenario: Scenario ->
-            assertSame(this, lastInstance)
-            lastInstance = this
+            assertSame(this, lastHelloInstance)
+            lastHelloInstance = this
         }
 
         AfterStep { scenario: Scenario ->
-            assertSame(this, lastInstance)
-            lastInstance = this
+            assertSame(this, lastHelloInstance)
+            lastHelloInstance = this
         }
 
         After { scenario: Scenario ->
-            assertSame(this, lastInstance)
-            lastInstance = this
+            assertSame(this, lastHelloInstance)
+            lastHelloInstance = this
         }
 
         Given("^A default$") {}
