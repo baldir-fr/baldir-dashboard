@@ -1,4 +1,3 @@
-
 buildscript {
     repositories {
         gradlePluginPortal()
@@ -14,10 +13,19 @@ buildscript {
     }
 }
 
-plugins{
+plugins {
     id("org.jmailen.kotlinter") version "3.2.0"
     id("org.ec4j.editorconfig") version "0.0.3"
     id("se.thinkcode.cucumber-runner") version "0.0.8" apply false
+    id("org.sonarqube") version "3.0"
+}
+
+sonarqube {
+    properties {
+        property("sonar.projectKey", "baldir-fr_baldir-dashboard")
+        property("sonar.organization", "baldir-fr")
+        property("sonar.host.url", "https://sonarcloud.io")
+    }
 }
 
 editorconfig {
@@ -33,7 +41,7 @@ group = "fr.baldir.dashboard"
 version = "1.0"
 allprojects {
     apply(plugin = "org.jmailen.kotlinter")
-    apply(plugin="org.ec4j.editorconfig")
+    apply(plugin = "org.ec4j.editorconfig")
     repositories {
         jcenter()
         mavenCentral()
