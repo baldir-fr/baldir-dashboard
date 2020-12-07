@@ -14,5 +14,4 @@ rootProject.name = "baldir-dashboard"
 include(":android-infra")
 include(":desktop-infra")
 include(":common")
-include(":domain")
 

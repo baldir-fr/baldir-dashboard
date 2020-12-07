@@ -22,7 +22,14 @@ kotlin {
                 implementation(compose.desktop.currentOs)
             }
         }
-        val jvmTest by getting
+        val jvmTest by getting {
+            dependencies {
+                implementation("io.cucumber:cucumber-java8:6.8.1")
+                implementation("io.cucumber:cucumber-junit:6.8.1")
+                implementation("org.junit.jupiter:junit-jupiter:5.7.0")
+                implementation("org.junit.vintage:junit-vintage-engine:5.7.0")
+            }
+        }
     }
 }
 

@@ -1,5 +1,6 @@
 import fr.baldir.dashboard.domain.Hello
 import io.cucumber.java8.En
+import io.cucumber.java8.PendingException
 import io.cucumber.java8.Scenario
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNotSame
@@ -37,6 +38,7 @@ class HelloStepDefinitions : En {
             lastGreeting = Hello().hello()
         }
         When("^greeting is addressed to \"([^\"]*)\"$") { target: String? ->
+            throw PendingException("plop!")
             lastGreeting = Hello().hello(target!!)
         }
         Then("^the greeting is \"([^\"]*)\"$") { expectedGreeting: String? ->
