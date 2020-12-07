@@ -63,7 +63,8 @@ Git tag : [03-lint](https://github.com/baldir-fr/baldir-dashboard/releases/tag/0
 - Refactored gradle modules
 - Tried Pickles for generating living documentation
 - TODO later Maybe try also https://www.npmjs.com/package/cucumber-html-reporter
-    
+- Basic github action for lint and tests
+
 ## 05 - ...
 
 
